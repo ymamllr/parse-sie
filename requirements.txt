@@ -1,6 +1,6 @@
 gspread
 httplib2
-oauth2client
+google-auth
 pkg-resources
 pyasn1
 pyasn1-modules
