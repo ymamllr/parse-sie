@@ -130,7 +130,8 @@ def main():
 
     if args.googlesheets:
         import gspread
-        from oauth2client.service_account import ServiceAccountCredentials
+        from google.oauth2 import service_account as ServiceAccountCredentials
+        # Previous code based on deprecated library oauth2client: oauth2client.service_account import ServiceAccountCredentials
         nbr_rows = len(data)
         nbr_cols = len(data[0])
         print("Google Sheet: " + args.googlesheets)
